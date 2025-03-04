@@ -10,6 +10,5 @@ const {
 
 const imagekit = new ImageKit({ publicKey, privateKey, urlEndpoint });
 export async function GET() {
-  //return NextResponse.json(imagekit.getAuthenticationParameters());
-  return NextResponse.json({ message: "API route working!" });
+  return NextResponse.json(imagekit.getAuthenticationParameters());
 }
